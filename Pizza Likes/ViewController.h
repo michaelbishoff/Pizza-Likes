@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>{
+    __weak IBOutlet UITextField *passwordTextField;
+//    IBOutlet UITextField *textField;
+}
+
+
 
 @end

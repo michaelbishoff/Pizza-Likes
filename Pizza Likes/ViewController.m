@@ -34,9 +34,32 @@
     [_passwordTextField resignFirstResponder];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
+- (BOOL)textFieldShouldReturn:(UITextField *)passwordTextField {
+//    [textField resignFirstResponder];
+    // Do a pretty animation
+    [self dismissViewControllerAnimated:YES completion:nil];
     return YES;
 }
+
+//- (BOOL) textFieldShouldReturn:(UITextField *)passwordTextField{
+//    [self save:nil];
+//    return YES;
+//}
+
+//-(void) save:sender {
+//    double *count = _homeCount.value;
+//    NSString *newItem = passwordTextField.text;
+//    if (newItem != nil){
+//        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//        NSMutableArray *displayStrings = [[[userDefaults objectForKey:@"DisplayStrings"] mutableCopy] autoret];
+//        [displayStrings addObject:newItem];
+//        [userDefaults setObject:displayStrings forKey:@"DisplayStrings"];
+//        [userDefaults synchronize];
+//    }
+//    
+//    // Do a pretty animation
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
+
 
 @end

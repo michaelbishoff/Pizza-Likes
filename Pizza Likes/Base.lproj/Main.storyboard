@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7gT-3s-xby"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  izza Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-1d-Daa">
@@ -35,17 +35,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="iLikePizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-0y-9be">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="iLikePizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-0y-9be">
                                 <rect key="frame" x="62" y="171" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Og3-wk-UtC"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pizzapizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Ei-gq2">
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pizzapizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Ei-gq2">
                                 <rect key="frame" x="62" y="257" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="closeKeyboard:" destination="vXZ-lx-hvc" eventType="touchCancel" id="gcA-l6-gY5"/>
                                 </connections>
@@ -68,8 +71,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="XSC-Ei-gq2" id="cds-iO-uDZ"/>
+                        <outlet property="passwordTextField" destination="XSC-Ei-gq2" id="0lr-h9-fWV"/>
                         <outlet property="usernameTextField" destination="2Ue-0y-9be" id="D2a-Zm-a0r"/>
                     </connections>
                 </viewController>
@@ -85,11 +89,11 @@
                         <viewControllerLayoutGuide type="bottom" id="eeh-6i-21J"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5EP-jp-a3B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-oR-NeO">
-                                <rect key="frame" x="61" y="419" width="198" height="44"/>
+                                <rect key="frame" x="61" y="436" width="198" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Redeem" id="ToN-7L-KPA">
@@ -124,6 +128,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aWh-jy-D71"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGO-ko-anH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,11 +143,11 @@
                         <viewControllerLayoutGuide type="bottom" id="uh7-c5-Ioa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C1o-aj-q6s" customClass="ReedemViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feather Nails.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F24-Gk-rQB">
-                                <rect key="frame" x="0.0" y="20" width="320" height="219"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="224"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="85c-BZ-5Se">
@@ -157,7 +162,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-TV-OPs">
-                                <rect key="frame" x="61" y="431" width="198" height="44"/>
+                                <rect key="frame" x="61" y="436" width="198" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Profile" id="CWz-du-c1f">
@@ -190,7 +195,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="progress" destination="85c-BZ-5Se" id="emP-ll-K0l"/>
+                        <outlet property="progressLabel" destination="jUK-7C-I1f" id="Eu9-Da-fuK"/>
                         <outlet property="redeemButton" destination="w0y-Io-Zty" id="tse-LA-rNu"/>
                     </connections>
                 </viewController>
@@ -207,11 +215,11 @@
                         <viewControllerLayoutGuide type="bottom" id="dC7-QG-UBr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uCt-sk-sdL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXK-uz-fxN">
-                                <rect key="frame" x="48" y="427" width="225" height="44"/>
+                                <rect key="frame" x="48" y="436" width="225" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Profile" id="d5p-AL-hdb">
@@ -232,17 +240,25 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Braided-flower-bun.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-yq-gtb">
-                                <rect key="frame" x="10" y="20" width="300" height="291"/>
+                                <rect key="frame" x="10" y="20" width="300" height="199"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin it.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-iF-a55">
-                                <rect key="frame" x="20" y="310" width="85" height="50"/>
+                                <rect key="frame" x="20" y="227" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pizza it.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFP-qy-1W2">
+                                <rect key="frame" x="118" y="227" width="85" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq6-Mc-D5T"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="pizzaIt" destination="pFP-qy-1W2" id="4BC-XP-C6o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAx-co-1Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,6 +270,7 @@
         <image name="Feather Nails.jpg" width="500" height="491"/>
         <image name="Orange Snail.jpg" width="736" height="1104"/>
         <image name="Pin it.png" width="262" height="155"/>
+        <image name="Pizza it.png" width="450" height="250"/>
         <image name="pinterest_badge_red.png" width="800" height="800"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -262,9 +279,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2HU-7K-X3g"/>
-        <segue reference="SGP-aq-MT2"/>
+        <segue reference="EsZ-6M-mlN"/>
         <segue reference="wAI-fd-Akl"/>
-        <segue reference="9AN-Nm-IBj"/>
+        <segue reference="SGP-aq-MT2"/>
+        <segue reference="6Wx-AY-NB9"/>
     </inferredMetricsTieBreakers>
 </document>

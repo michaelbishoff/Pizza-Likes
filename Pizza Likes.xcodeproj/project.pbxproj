@@ -30,6 +30,7 @@
 		4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */; };
 		4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D1188A7077002C2AB3 /* Pin it.png */; };
 		4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */; };
+		4FFE6D59188AEDDA00F577EC /* Pizza it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE6D58188AEDDA00F577EC /* Pizza it.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Braided-flower-bun.jpg"; path = "../Braided-flower-bun.jpg"; sourceTree = "<group>"; };
 		4F5369D1188A7077002C2AB3 /* Pin it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pin it.png"; path = "../Pin it.png"; sourceTree = "<group>"; };
 		4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Giraffe Nails.jpg"; path = "../Giraffe Nails.jpg"; sourceTree = "<group>"; };
+		4FFE6D58188AEDDA00F577EC /* Pizza it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza it.png"; path = "../Pizza it.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */,
 				4F5369D1188A7077002C2AB3 /* Pin it.png */,
 				4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */,
+				4FFE6D58188AEDDA00F577EC /* Pizza it.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +235,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Michael Bishoff";
 				TargetAttributes = {
+					4F536987188A50CD002C2AB3 = {
+						DevelopmentTeam = 2S3D8J8M3T;
+					};
 					4F5369A8188A50CD002C2AB3 = {
 						TestTargetID = 4F536987188A50CD002C2AB3;
 					};
@@ -261,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FFE6D59188AEDDA00F577EC /* Pizza it.png in Resources */,
 				4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */,
 				4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */,
 				4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */,
@@ -420,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza Likes/Pizza Likes-Prefix.pch";
 				INFOPLIST_FILE = "Pizza Likes/Pizza Likes-Info.plist";
@@ -433,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza Likes/Pizza Likes-Prefix.pch";
 				INFOPLIST_FILE = "Pizza Likes/Pizza Likes-Info.plist";

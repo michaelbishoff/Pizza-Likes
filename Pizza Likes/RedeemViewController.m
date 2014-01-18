@@ -10,6 +10,8 @@
 
 @interface RedeemViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *redeemButton;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+@property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
 @end
 
@@ -36,8 +38,16 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)pressRedeemButton:(id)sender {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cannot Redeem Yet." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-    [alertView show];
+    
+    if (_progressBar.progress < 1){
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cannot Redeem Yet." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+    }
+    else{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Pizza on its way!" message:nil delegate:self cancelButtonTitle:@"Woo Hoo!" otherButtonTitles: nil];
+        [alertView show];
+    }
+    
 }
 
 
