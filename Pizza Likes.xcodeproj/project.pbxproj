@@ -22,15 +22,15 @@
 		4F5369B5188A50CD002C2AB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369B3188A50CD002C2AB3 /* InfoPlist.strings */; };
 		4F5369B7188A50CD002C2AB3 /* Pizza_LikesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5369B6188A50CD002C2AB3 /* Pizza_LikesTests.m */; };
 		4F5369C2188A53D0002C2AB3 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5369C1188A53D0002C2AB3 /* ProfileViewController.m */; };
-		4F5369C4188A5530002C2AB3 /* Orange Snail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369C3188A5530002C2AB3 /* Orange Snail.jpg */; };
-		4F5369C6188A6151002C2AB3 /* pinterest_badge_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369C5188A6151002C2AB3 /* pinterest_badge_red.png */; };
 		4F5369C9188A67BE002C2AB3 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5369C8188A67BE002C2AB3 /* FeedViewController.m */; };
 		4F5369CC188A699A002C2AB3 /* RedeemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5369CB188A699A002C2AB3 /* RedeemViewController.m */; };
-		4F5369CE188A6A84002C2AB3 /* Feather Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */; };
-		4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */; };
-		4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D1188A7077002C2AB3 /* Pin it.png */; };
-		4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */; };
-		4FFE6D59188AEDDA00F577EC /* Pizza it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE6D58188AEDDA00F577EC /* Pizza it.png */; };
+		4F6D4980188B0933005303D2 /* Pizza it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D4979188B0933005303D2 /* Pizza it.png */; };
+		4F6D4981188B0933005303D2 /* Feather Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497A188B0933005303D2 /* Feather Nails.jpg */; };
+		4F6D4982188B0933005303D2 /* pinterest_badge_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497B188B0933005303D2 /* pinterest_badge_red.png */; };
+		4F6D4983188B0933005303D2 /* Braided-flower-bun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497C188B0933005303D2 /* Braided-flower-bun.jpg */; };
+		4F6D4984188B0933005303D2 /* Pin it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497D188B0933005303D2 /* Pin it.png */; };
+		4F6D4985188B0933005303D2 /* Giraffe Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497E188B0933005303D2 /* Giraffe Nails.jpg */; };
+		4F6D4986188B0933005303D2 /* Orange Snail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497F188B0933005303D2 /* Orange Snail.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,17 +65,17 @@
 		4F5369B6188A50CD002C2AB3 /* Pizza_LikesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza_LikesTests.m; sourceTree = "<group>"; };
 		4F5369C0188A53D0002C2AB3 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		4F5369C1188A53D0002C2AB3 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		4F5369C3188A5530002C2AB3 /* Orange Snail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Orange Snail.jpg"; path = "../Orange Snail.jpg"; sourceTree = "<group>"; };
-		4F5369C5188A6151002C2AB3 /* pinterest_badge_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinterest_badge_red.png; path = ../pinterest_badge_red.png; sourceTree = "<group>"; };
 		4F5369C7188A67BE002C2AB3 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		4F5369C8188A67BE002C2AB3 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		4F5369CA188A699A002C2AB3 /* RedeemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedeemViewController.h; sourceTree = "<group>"; };
 		4F5369CB188A699A002C2AB3 /* RedeemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedeemViewController.m; sourceTree = "<group>"; };
-		4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Feather Nails.jpg"; path = "../Feather Nails.jpg"; sourceTree = "<group>"; };
-		4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Braided-flower-bun.jpg"; path = "../Braided-flower-bun.jpg"; sourceTree = "<group>"; };
-		4F5369D1188A7077002C2AB3 /* Pin it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pin it.png"; path = "../Pin it.png"; sourceTree = "<group>"; };
-		4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Giraffe Nails.jpg"; path = "../Giraffe Nails.jpg"; sourceTree = "<group>"; };
-		4FFE6D58188AEDDA00F577EC /* Pizza it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza it.png"; path = "../Pizza it.png"; sourceTree = "<group>"; };
+		4F6D4979188B0933005303D2 /* Pizza it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pizza it.png"; sourceTree = "<group>"; };
+		4F6D497A188B0933005303D2 /* Feather Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Feather Nails.jpg"; sourceTree = "<group>"; };
+		4F6D497B188B0933005303D2 /* pinterest_badge_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest_badge_red.png; sourceTree = "<group>"; };
+		4F6D497C188B0933005303D2 /* Braided-flower-bun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Braided-flower-bun.jpg"; sourceTree = "<group>"; };
+		4F6D497D188B0933005303D2 /* Pin it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin it.png"; sourceTree = "<group>"; };
+		4F6D497E188B0933005303D2 /* Giraffe Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Giraffe Nails.jpg"; sourceTree = "<group>"; };
+		4F6D497F188B0933005303D2 /* Orange Snail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Orange Snail.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +109,6 @@
 				4F5369B0188A50CD002C2AB3 /* Pizza LikesTests */,
 				4F53698A188A50CD002C2AB3 /* Frameworks */,
 				4F536989188A50CD002C2AB3 /* Products */,
-				4F5369C3188A5530002C2AB3 /* Orange Snail.jpg */,
-				4F5369C5188A6151002C2AB3 /* pinterest_badge_red.png */,
-				4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */,
-				4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */,
-				4F5369D1188A7077002C2AB3 /* Pin it.png */,
-				4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */,
-				4FFE6D58188AEDDA00F577EC /* Pizza it.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +135,7 @@
 		4F536991188A50CD002C2AB3 /* Pizza Likes */ = {
 			isa = PBXGroup;
 			children = (
+				4F6D4978188B08C0005303D2 /* Images */,
 				4F53699A188A50CD002C2AB3 /* AppDelegate.h */,
 				4F53699B188A50CD002C2AB3 /* AppDelegate.m */,
 				4F53699D188A50CD002C2AB3 /* Main.storyboard */,
@@ -186,6 +180,20 @@
 				4F5369B3188A50CD002C2AB3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F6D4978188B08C0005303D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4F6D4979188B0933005303D2 /* Pizza it.png */,
+				4F6D497A188B0933005303D2 /* Feather Nails.jpg */,
+				4F6D497B188B0933005303D2 /* pinterest_badge_red.png */,
+				4F6D497C188B0933005303D2 /* Braided-flower-bun.jpg */,
+				4F6D497D188B0933005303D2 /* Pin it.png */,
+				4F6D497E188B0933005303D2 /* Giraffe Nails.jpg */,
+				4F6D497F188B0933005303D2 /* Orange Snail.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,15 +275,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FFE6D59188AEDDA00F577EC /* Pizza it.png in Resources */,
-				4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */,
-				4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */,
-				4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */,
+				4F6D4985188B0933005303D2 /* Giraffe Nails.jpg in Resources */,
+				4F6D4983188B0933005303D2 /* Braided-flower-bun.jpg in Resources */,
+				4F6D4986188B0933005303D2 /* Orange Snail.jpg in Resources */,
+				4F6D4984188B0933005303D2 /* Pin it.png in Resources */,
 				4F5369A4188A50CD002C2AB3 /* Images.xcassets in Resources */,
+				4F6D4981188B0933005303D2 /* Feather Nails.jpg in Resources */,
 				4F536996188A50CD002C2AB3 /* InfoPlist.strings in Resources */,
-				4F5369CE188A6A84002C2AB3 /* Feather Nails.jpg in Resources */,
-				4F5369C6188A6151002C2AB3 /* pinterest_badge_red.png in Resources */,
-				4F5369C4188A5530002C2AB3 /* Orange Snail.jpg in Resources */,
+				4F6D4980188B0933005303D2 /* Pizza it.png in Resources */,
+				4F6D4982188B0933005303D2 /* pinterest_badge_red.png in Resources */,
 				4F53699F188A50CD002C2AB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
