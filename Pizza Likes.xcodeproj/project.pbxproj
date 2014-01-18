@@ -29,6 +29,7 @@
 		4F5369CE188A6A84002C2AB3 /* Feather Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */; };
 		4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */; };
 		4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D1188A7077002C2AB3 /* Pin it.png */; };
+		4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Feather Nails.jpg"; path = "../Feather Nails.jpg"; sourceTree = "<group>"; };
 		4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Braided-flower-bun.jpg"; path = "../Braided-flower-bun.jpg"; sourceTree = "<group>"; };
 		4F5369D1188A7077002C2AB3 /* Pin it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pin it.png"; path = "../Pin it.png"; sourceTree = "<group>"; };
+		4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Giraffe Nails.jpg"; path = "../Giraffe Nails.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				4F5369CD188A6A84002C2AB3 /* Feather Nails.jpg */,
 				4F5369CF188A6F4B002C2AB3 /* Braided-flower-bun.jpg */,
 				4F5369D1188A7077002C2AB3 /* Pin it.png */,
+				4F5369D3188A7510002C2AB3 /* Giraffe Nails.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5369D4188A7510002C2AB3 /* Giraffe Nails.jpg in Resources */,
 				4F5369D0188A6F4B002C2AB3 /* Braided-flower-bun.jpg in Resources */,
 				4F5369D2188A7077002C2AB3 /* Pin it.png in Resources */,
 				4F5369A4188A50CD002C2AB3 /* Images.xcassets in Resources */,
