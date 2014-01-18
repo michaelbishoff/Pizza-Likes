@@ -1,26 +1,270 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ToV-SI-t0n"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gT-3s-xby"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  izza Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0f-1d-Daa">
+                                <rect key="frame" x="62" y="54" width="196" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idP-KK-OaN">
+                                <rect key="frame" x="62" y="142" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHo-en-k6U">
+                                <rect key="frame" x="62" y="219" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="iLikePizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-0y-9be">
+                                <rect key="frame" x="62" y="171" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pizzapizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Ei-gq2">
+                                <rect key="frame" x="62" y="257" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="closeKeyboard:" destination="vXZ-lx-hvc" eventType="touchCancel" id="gcA-l6-gY5"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-vm-sZh">
+                                <rect key="frame" x="196" y="310" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nUs-MH-4YC" kind="modal" id="mvt-ws-QNu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinterest_badge_red.png" translatesAutoresizingMaskIntoConstraints="NO" id="wAE-Qd-bfc">
+                                <rect key="frame" x="20" y="34" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="XSC-Ei-gq2" id="cds-iO-uDZ"/>
+                        <outlet property="usernameTextField" destination="2Ue-0y-9be" id="D2a-Zm-a0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="g3N-p0-sXy">
+            <objects>
+                <viewController id="iTa-5X-ge8" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SbH-XA-gdu"/>
+                        <viewControllerLayoutGuide type="bottom" id="eeh-6i-21J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5EP-jp-a3B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-oR-NeO">
+                                <rect key="frame" x="61" y="419" width="198" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Redeem" id="ToN-7L-KPA">
+                                        <connections>
+                                            <segue destination="i00-Eo-xWd" kind="modal" id="evv-cU-Pih"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Feed" id="in7-Gi-ZKW">
+                                        <connections>
+                                            <segue destination="nUs-MH-4YC" kind="modal" id="bYJ-Sa-MKk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Logout" id="7Df-vL-RFG">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="vrl-GD-ESY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iLikePizza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cB-pl-qb2">
+                                <rect key="frame" x="68" y="55" width="185" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Orange Snail.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x9L-xb-88k">
+                                <rect key="frame" x="40" y="92" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aWh-jy-D71"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGO-ko-anH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="-439"/>
+        </scene>
+        <!--Redeem View Controller-->
+        <scene sceneID="Qco-L6-40h">
+            <objects>
+                <viewController id="i00-Eo-xWd" customClass="RedeemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rtb-Rf-o51"/>
+                        <viewControllerLayoutGuide type="bottom" id="uh7-c5-Ioa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C1o-aj-q6s" customClass="ReedemViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feather Nails.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F24-Gk-rQB">
+                                <rect key="frame" x="0.0" y="20" width="320" height="219"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="85c-BZ-5Se">
+                                <rect key="frame" x="85" y="283" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50 / 100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUK-7C-I1f">
+                                <rect key="frame" x="129" y="252" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-TV-OPs">
+                                <rect key="frame" x="61" y="431" width="198" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Profile" id="CWz-du-c1f">
+                                        <connections>
+                                            <segue destination="iTa-5X-ge8" kind="modal" id="2HU-7K-X3g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Feed" id="g12-d0-FEi">
+                                        <connections>
+                                            <segue destination="nUs-MH-4YC" kind="modal" id="wAI-fd-Akl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Logout" id="4Jx-yZ-wwS">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="9AN-Nm-IBj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0y-Io-Zty">
+                                <rect key="frame" x="219" y="293" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Redeem">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressRedeemButton:" destination="i00-Eo-xWd" eventType="touchDown" id="428-Js-Fff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="redeemButton" destination="w0y-Io-Zty" id="tse-LA-rNu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8c-vM-odM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="886"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="qrt-2M-PHb">
+            <objects>
+                <viewController id="nUs-MH-4YC" customClass="FeedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N8Q-xf-TsI"/>
+                        <viewControllerLayoutGuide type="bottom" id="dC7-QG-UBr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCt-sk-sdL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXK-uz-fxN">
+                                <rect key="frame" x="48" y="427" width="225" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Profile" id="d5p-AL-hdb">
+                                        <connections>
+                                            <segue destination="iTa-5X-ge8" kind="modal" id="6Wx-AY-NB9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Redeem" id="JdE-Cq-evC">
+                                        <connections>
+                                            <segue destination="i00-Eo-xWd" kind="modal" id="SGP-aq-MT2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Logout" id="44S-S8-KXD">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="EsZ-6M-mlN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Braided-flower-bun.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uNn-yq-gtb">
+                                <rect key="frame" x="10" y="20" width="300" height="291"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin it.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-iF-a55">
+                                <rect key="frame" x="20" y="310" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jq6-Mc-D5T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAx-co-1Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="237"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Braided-flower-bun.jpg" width="612" height="642"/>
+        <image name="Feather Nails.jpg" width="500" height="491"/>
+        <image name="Orange Snail.jpg" width="736" height="1104"/>
+        <image name="Pin it.png" width="262" height="155"/>
+        <image name="pinterest_badge_red.png" width="800" height="800"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="2HU-7K-X3g"/>
+        <segue reference="SGP-aq-MT2"/>
+        <segue reference="wAI-fd-Akl"/>
+        <segue reference="9AN-Nm-IBj"/>
+    </inferredMetricsTieBreakers>
 </document>
