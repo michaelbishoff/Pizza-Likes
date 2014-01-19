@@ -10,9 +10,17 @@
 
 @implementation AppDelegate
 
+@synthesize numPizzas;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    self.numPizzas = 31;
+//    [self setNumPizzas:31];
+//    self.numPizzas = [[NSNumber alloc] initWithInt:31];
+    [self setNumPizzas:[[NSNumber alloc] initWithInt:31]];
+    [self.window setBackgroundColor:[[UIColor alloc] initWithRed:(230/255.0) green:(230/255.0) blue:(230/255.0) alpha:1]];
+    
     return YES;
 }
 							

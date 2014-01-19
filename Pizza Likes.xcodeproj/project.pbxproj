@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F067E5E188B7168008B7E1C /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F067E5B188B715B008B7E1C /* Pinterest.framework */; };
 		4F53698C188A50CD002C2AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F53698B188A50CD002C2AB3 /* Foundation.framework */; };
 		4F53698E188A50CD002C2AB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F53698D188A50CD002C2AB3 /* CoreGraphics.framework */; };
 		4F536990188A50CD002C2AB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F53698F188A50CD002C2AB3 /* UIKit.framework */; };
@@ -31,6 +32,8 @@
 		4F6D4984188B0933005303D2 /* Pin it.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497D188B0933005303D2 /* Pin it.png */; };
 		4F6D4985188B0933005303D2 /* Giraffe Nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497E188B0933005303D2 /* Giraffe Nails.jpg */; };
 		4F6D4986188B0933005303D2 /* Orange Snail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D497F188B0933005303D2 /* Orange Snail.jpg */; };
+		4F6D4991188B26E4005303D2 /* Pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D4990188B26E4005303D2 /* Pizza.png */; };
+		4F6D4995188B33ED005303D2 /* Add Pizzas.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6D4994188B33ED005303D2 /* Add Pizzas.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F067E46188B714E008B7E1C /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
+		4F067E48188B714E008B7E1C /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
+		4F067E4D188B715B008B7E1C /* Pinterest.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Pinterest.html; sourceTree = "<group>"; };
+		4F067E4F188B715B008B7E1C /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		4F067E50188B715B008B7E1C /* stylesPrint.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		4F067E51188B715B008B7E1C /* hierarchy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		4F067E53188B715B008B7E1C /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		4F067E54188B715B008B7E1C /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		4F067E55188B715B008B7E1C /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		4F067E56188B715B008B7E1C /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		4F067E57188B715B008B7E1C /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		4F067E58188B715B008B7E1C /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4F067E59188B715B008B7E1C /* PinItDemo.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = PinItDemo.zip; sourceTree = "<group>"; };
+		4F067E5B188B715B008B7E1C /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
+		4F067E5D188B715B008B7E1C /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
 		4F536988188A50CD002C2AB3 /* Pizza Likes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pizza Likes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F53698B188A50CD002C2AB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F53698D188A50CD002C2AB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +94,8 @@
 		4F6D497D188B0933005303D2 /* Pin it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pin it.png"; sourceTree = "<group>"; };
 		4F6D497E188B0933005303D2 /* Giraffe Nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Giraffe Nails.jpg"; sourceTree = "<group>"; };
 		4F6D497F188B0933005303D2 /* Orange Snail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Orange Snail.jpg"; sourceTree = "<group>"; };
+		4F6D4990188B26E4005303D2 /* Pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pizza.png; sourceTree = "<group>"; };
+		4F6D4994188B33ED005303D2 /* Add Pizzas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add Pizzas.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F067E5E188B7168008B7E1C /* Pinterest.framework in Frameworks */,
 				4F53698E188A50CD002C2AB3 /* CoreGraphics.framework in Frameworks */,
 				4F536990188A50CD002C2AB3 /* UIKit.framework in Frameworks */,
 				4F53698C188A50CD002C2AB3 /* Foundation.framework in Frameworks */,
@@ -102,6 +123,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F067E45188B714E008B7E1C /* Pinterest.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E46188B714E008B7E1C /* Pinterest.framework */,
+				4F067E47188B714E008B7E1C /* Resources */,
+			);
+			name = Pinterest.embeddedframework;
+			path = ../../Downloads/PinItSDKiOS/Pinterest.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4F067E47188B714E008B7E1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E48188B714E008B7E1C /* PinterestSDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F067E49188B715B008B7E1C /* PinItSDKiOS */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E4A188B715B008B7E1C /* docs */,
+				4F067E59188B715B008B7E1C /* PinItDemo.zip */,
+				4F067E5A188B715B008B7E1C /* Pinterest.embeddedframework */,
+			);
+			name = PinItSDKiOS;
+			path = ../../Downloads/PinItSDKiOS;
+			sourceTree = "<group>";
+		};
+		4F067E4A188B715B008B7E1C /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E4B188B715B008B7E1C /* html */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		4F067E4B188B715B008B7E1C /* html */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E4C188B715B008B7E1C /* Classes */,
+				4F067E4E188B715B008B7E1C /* css */,
+				4F067E51188B715B008B7E1C /* hierarchy.html */,
+				4F067E52188B715B008B7E1C /* img */,
+				4F067E58188B715B008B7E1C /* index.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		4F067E4C188B715B008B7E1C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E4D188B715B008B7E1C /* Pinterest.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4F067E4E188B715B008B7E1C /* css */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E4F188B715B008B7E1C /* styles.css */,
+				4F067E50188B715B008B7E1C /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		4F067E52188B715B008B7E1C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E53188B715B008B7E1C /* button_bar_background.png */,
+				4F067E54188B715B008B7E1C /* disclosure.png */,
+				4F067E55188B715B008B7E1C /* disclosure_open.png */,
+				4F067E56188B715B008B7E1C /* library_background.png */,
+				4F067E57188B715B008B7E1C /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		4F067E5A188B715B008B7E1C /* Pinterest.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E5B188B715B008B7E1C /* Pinterest.framework */,
+				4F067E5C188B715B008B7E1C /* Resources */,
+			);
+			path = Pinterest.embeddedframework;
+			sourceTree = "<group>";
+		};
+		4F067E5C188B715B008B7E1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F067E5D188B715B008B7E1C /* PinterestSDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4F53697F188A50CD002C2AB3 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +240,8 @@
 		4F53698A188A50CD002C2AB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F067E49188B715B008B7E1C /* PinItSDKiOS */,
+				4F067E45188B714E008B7E1C /* Pinterest.embeddedframework */,
 				4F53698B188A50CD002C2AB3 /* Foundation.framework */,
 				4F53698D188A50CD002C2AB3 /* CoreGraphics.framework */,
 				4F53698F188A50CD002C2AB3 /* UIKit.framework */,
@@ -185,6 +303,8 @@
 		4F6D4978188B08C0005303D2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4F6D4994188B33ED005303D2 /* Add Pizzas.png */,
+				4F6D4990188B26E4005303D2 /* Pizza.png */,
 				4F6D4979188B0933005303D2 /* Pizza it.png */,
 				4F6D497A188B0933005303D2 /* Feather Nails.jpg */,
 				4F6D497B188B0933005303D2 /* pinterest_badge_red.png */,
@@ -279,8 +399,10 @@
 				4F6D4983188B0933005303D2 /* Braided-flower-bun.jpg in Resources */,
 				4F6D4986188B0933005303D2 /* Orange Snail.jpg in Resources */,
 				4F6D4984188B0933005303D2 /* Pin it.png in Resources */,
+				4F6D4991188B26E4005303D2 /* Pizza.png in Resources */,
 				4F5369A4188A50CD002C2AB3 /* Images.xcassets in Resources */,
 				4F6D4981188B0933005303D2 /* Feather Nails.jpg in Resources */,
+				4F6D4995188B33ED005303D2 /* Add Pizzas.png in Resources */,
 				4F536996188A50CD002C2AB3 /* InfoPlist.strings in Resources */,
 				4F6D4980188B0933005303D2 /* Pizza it.png in Resources */,
 				4F6D4982188B0933005303D2 /* pinterest_badge_red.png in Resources */,
@@ -436,6 +558,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/michaelbishoff/Downloads/PinItSDKiOS/Pinterest.embeddedframework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza Likes/Pizza Likes-Prefix.pch";
 				INFOPLIST_FILE = "Pizza Likes/Pizza Likes-Info.plist";
@@ -450,6 +576,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/michaelbishoff/Downloads/PinItSDKiOS/Pinterest.embeddedframework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza Likes/Pizza Likes-Prefix.pch";
 				INFOPLIST_FILE = "Pizza Likes/Pizza Likes-Info.plist";

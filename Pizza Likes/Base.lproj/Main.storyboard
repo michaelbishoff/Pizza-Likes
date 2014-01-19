@@ -41,16 +41,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
+                                    <action selector="toggleItalics:" destination="XSC-Ei-gq2" eventType="editingDidEnd" id="i92-5L-la3"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Og3-wk-UtC"/>
+                                    <segue destination="nUs-MH-4YC" kind="modal" id="IC6-Dh-mzt"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pizzapizza" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-Ei-gq2">
                                 <rect key="frame" x="62" y="257" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="closeKeyboard:" destination="vXZ-lx-hvc" eventType="touchCancel" id="gcA-l6-gY5"/>
+                                    <segue destination="nUs-MH-4YC" kind="modal" identifier="passwordSegue" id="7Zm-Mr-eQn"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-vm-sZh">
@@ -92,27 +95,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZS-oR-NeO">
-                                <rect key="frame" x="61" y="436" width="198" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Redeem" id="ToN-7L-KPA">
-                                        <connections>
-                                            <segue destination="i00-Eo-xWd" kind="modal" id="evv-cU-Pih"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Feed" id="in7-Gi-ZKW">
-                                        <connections>
-                                            <segue destination="nUs-MH-4YC" kind="modal" id="bYJ-Sa-MKk"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Logout" id="7Df-vL-RFG">
-                                        <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="modal" id="vrl-GD-ESY"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iLikePizza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cB-pl-qb2">
                                 <rect key="frame" x="68" y="55" width="185" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,11 +106,64 @@
                                 <rect key="frame" x="40" y="92" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIW-wf-XlB">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Profile" id="DAY-SV-qwA"/>
+                                    <barButtonItem title="Feed" width="75" id="Eya-Jr-kWr">
+                                        <connections>
+                                            <segue destination="nUs-MH-4YC" kind="modal" id="xWx-n4-bbF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Redeem" width="75" id="ghu-y8-6cf">
+                                        <connections>
+                                            <segue destination="i00-Eo-xWd" kind="modal" id="m3w-2P-kNk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Logout" width="75" id="y5v-bi-LBv">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="aSt-RO-tYE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-If-YPV">
+                                <rect key="frame" x="80" y="263" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pizza.png" translatesAutoresizingMaskIntoConstraints="NO" id="VM4-WG-t4B">
+                                <rect key="frame" x="124" y="260" width="36" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="'s to Give" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="303-1n-qie">
+                                <rect key="frame" x="168" y="267" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDs-LI-Xrn">
+                                <rect key="frame" x="95" y="337" width="131" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Add Pizzas.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addSlicesPressed:" destination="iTa-5X-ge8" eventType="touchUpInside" id="h4a-OQ-08C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aWh-jy-D71"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="AddSlices" destination="kDs-LI-Xrn" id="0j5-Wc-yos"/>
+                        <outlet property="numPizzasToGive" destination="f3y-If-YPV" id="ktv-us-4RU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGO-ko-anH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,27 +196,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-TV-OPs">
-                                <rect key="frame" x="61" y="436" width="198" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Profile" id="CWz-du-c1f">
-                                        <connections>
-                                            <segue destination="iTa-5X-ge8" kind="modal" id="2HU-7K-X3g"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Feed" id="g12-d0-FEi">
-                                        <connections>
-                                            <segue destination="nUs-MH-4YC" kind="modal" id="wAI-fd-Akl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Logout" id="4Jx-yZ-wwS">
-                                        <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="modal" id="9AN-Nm-IBj"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0y-Io-Zty">
                                 <rect key="frame" x="219" y="293" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,12 +206,34 @@
                                     <action selector="pressRedeemButton:" destination="i00-Eo-xWd" eventType="touchDown" id="428-Js-Fff"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcu-Py-mjp">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Profile" id="KGw-eY-mEU">
+                                        <connections>
+                                            <segue destination="iTa-5X-ge8" kind="modal" id="N1n-38-Tyv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Feed" width="75" id="WNi-ap-wTG">
+                                        <connections>
+                                            <segue destination="nUs-MH-4YC" kind="modal" id="ntC-hi-Tr3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Redeem" width="75" id="T1K-vq-Kos"/>
+                                    <barButtonItem title="Logout" width="75" id="USy-BK-Udh">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" id="ZmE-vq-oxe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="progress" destination="85c-BZ-5Se" id="emP-ll-K0l"/>
+                        <outlet property="progress" destination="85c-BZ-5Se" id="RLG-O8-MvS"/>
                         <outlet property="progressLabel" destination="jUK-7C-I1f" id="Eu9-Da-fuK"/>
                         <outlet property="redeemButton" destination="w0y-Io-Zty" id="tse-LA-rNu"/>
                     </connections>
@@ -218,8 +254,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXK-uz-fxN">
-                                <rect key="frame" x="48" y="436" width="225" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXK-uz-fxN">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Profile" id="d5p-AL-hdb">
@@ -227,12 +263,13 @@
                                             <segue destination="iTa-5X-ge8" kind="modal" id="6Wx-AY-NB9"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Redeem" id="JdE-Cq-evC">
+                                    <barButtonItem title="Feed" width="75" id="Dhw-K4-RiM"/>
+                                    <barButtonItem title="Redeem" width="75" id="JdE-Cq-evC">
                                         <connections>
                                             <segue destination="i00-Eo-xWd" kind="modal" id="SGP-aq-MT2"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Logout" id="44S-S8-KXD">
+                                    <barButtonItem title="Logout" width="75" id="44S-S8-KXD">
                                         <connections>
                                             <segue destination="vXZ-lx-hvc" kind="modal" id="EsZ-6M-mlN"/>
                                         </connections>
@@ -243,21 +280,34 @@
                                 <rect key="frame" x="10" y="20" width="300" height="199"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin it.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-iF-a55">
-                                <rect key="frame" x="20" y="227" width="85" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pizza it.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFP-qy-1W2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID9-n2-EFj">
                                 <rect key="frame" x="118" y="227" width="85" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="Pizza it.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressPizzaButton:" destination="nUs-MH-4YC" eventType="touchUpInside" id="JLg-yc-0BY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-Yf-yLF">
+                                <rect key="frame" x="20" y="227" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Pin it.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressPinButton:" destination="nUs-MH-4YC" eventType="touchUpInside" id="OEO-ev-I5t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jq6-Mc-D5T"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="pizzaIt" destination="pFP-qy-1W2" id="4BC-XP-C6o"/>
+                        <outlet property="pinButton" destination="3Cj-Yf-yLF" id="XrM-aj-eLY"/>
+                        <outlet property="pizzaIt" destination="ID9-n2-EFj" id="pdL-px-bnJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAx-co-1Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,11 +316,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add Pizzas.png" width="500" height="250"/>
         <image name="Braided-flower-bun.jpg" width="612" height="642"/>
         <image name="Feather Nails.jpg" width="500" height="491"/>
         <image name="Orange Snail.jpg" width="736" height="1104"/>
         <image name="Pin it.png" width="262" height="155"/>
         <image name="Pizza it.png" width="450" height="250"/>
+        <image name="Pizza.png" width="300" height="199"/>
         <image name="pinterest_badge_red.png" width="800" height="800"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -279,9 +331,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="mvt-ws-QNu"/>
+        <segue reference="EsZ-6M-mlN"/>
         <segue reference="SGP-aq-MT2"/>
-        <segue reference="wAI-fd-Akl"/>
-        <segue reference="9AN-Nm-IBj"/>
-        <segue reference="2HU-7K-X3g"/>
+        <segue reference="6Wx-AY-NB9"/>
     </inferredMetricsTieBreakers>
 </document>

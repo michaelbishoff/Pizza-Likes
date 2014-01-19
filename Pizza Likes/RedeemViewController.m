@@ -10,8 +10,8 @@
 
 @interface RedeemViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *redeemButton;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *progress;
 
 @end
 
@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [[UIColor alloc] initWithRed:(230/255.0) green:(230/255.0) blue:(230/255.0) alpha:1];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,7 +41,7 @@
 }
 - (IBAction)pressRedeemButton:(id)sender {
     
-    if (_progressBar.progress < 1){
+    if (_progress.progress < 1){
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cannot Redeem Yet." message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alertView show];
     }
@@ -49,7 +51,6 @@
     }
     
 }
-
 
 
 @end
