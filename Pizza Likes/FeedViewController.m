@@ -8,11 +8,16 @@
 
 #import "FeedViewController.h"
 #import "AppDelegate.h"
+//#import <Pinterest/Pinterest.h>
 
-@interface FeedViewController ()
+@interface FeedViewController ()//{
+//    Pinterest *_pinterest;
+//}
+
 @property (weak, nonatomic) IBOutlet UIButton *pizzaIt;
 @property (weak, nonatomic) IBOutlet UIButton *pinButton;
 @property (strong, atomic) AppDelegate *app;
+//@property (strong, atomic) UIButton *pinItButton;
 
 @end
 
@@ -33,7 +38,26 @@
 	// Do any additional setup after loading the view.
     self.app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     self.view.backgroundColor = [[UIColor alloc] initWithRed:(230/255.0) green:(230/255.0) blue:(230/255.0) alpha:1];
+    
+    
+    // Pinterest Button
+//    _pinItButton = [Pinterest pinItB?utton];
+//    [_pinItButton addTarget:self
+//                     action:@selector(pinIt:)
+//           forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:_pinItButton];
+    
 }
+
+
+//- (void)pinIt:(id)sender
+//{
+//    [_pinterest createPinWithImageURL:@"http://placekitten.com/500/400"
+//                            sourceURL:@"http://placekitten.com"
+//                          description:@"Pinning from Pin It Demo"];
+//}
+
+
 
 - (void)didReceiveMemoryWarning
 {
